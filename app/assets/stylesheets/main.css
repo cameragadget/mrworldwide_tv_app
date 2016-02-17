@@ -16,3 +16,7 @@ article {
   border: 1px solid red;
   padding: 1rem;
 }
+
+nav {
+  text-align: center;
+}
