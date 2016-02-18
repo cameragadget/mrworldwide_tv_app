@@ -1,0 +1,11 @@
+<h1><%= @video.title %></h1>
+
+ <%=raw @video.embed %>
+
+ <br>
+
+<%= link_to "Edit", edit_video_path %>
+
+<%= link_to "Destroy this video!", video_path, method: :delete, data: { confirm: "Are you sure you want to delete this bean?"} %>
+
+<%= link_to "Back to the list", videos_path %>

@@ -1,5 +1,9 @@
+<hi>Edit this video!</hi>
 
 <%= form_for @video do |f| %>
+
+<div>
+
   <%= f.label :title %>
   <%= f.text_field :title %>
   <br>
@@ -8,13 +12,11 @@
   <br>
   <%= f.label :embed_url, "YouTube ID" %>
   <%= f.text_field :embed_url %>
-  <br>
-  <%= f.submit "Create" %>
+
+</div>
+
+  <%= f.submit "Submit these changes!" %>
 
 <% end %>
 
-<ul>
-  <% @video.errors.full_messages.each do |message| %>
-    <li><%= message %></li>
-  <% end %>
-</ul>
+<%= link_to "Back to the list!", videos_path %>
